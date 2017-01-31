@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #eee;
+  color:#333;
+}
+header{
+  overflow: hidden;
+
+}
+h1 > a{
+  float: left;
+  text-decoration:none;
+  color: #333;
+}
+nav{
+  float: right;
+  overflow: hidden;
+  }
+nav > ul > li{
+  float:left;
+  list-style: none;
+  text-decoration: none;
+  background-color: tomato;
+
+}
+nav li > a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: block;
+  padding: 15px;
+}
+#master{
+  height:300px;
+  text-align: center;
+  padding-top:50px;
+  background-color:white;
+}
+#master > h2{
+  font-size: 35px;
+  color: seagreen;
+}
+#master > p {
+  margin-bottom:30px;
+}
+#master > a{
+  padding: 12px 18px;
+  font-size: 25px;
+  background-color: seagreen;
+  text-decoration: none;
+  color: white;
+}
+#two{
+  margin-top: 30px;
+  background-color:#ccc;
+  overflow: hidden;
+}
+.box{
+  width: 256px;
+  background-color:white;
+  float: left;
+  height: 100px;
+  border: 2px black solid;
+  margin: 10px;
+}
+.box > :last-child{
+  margin: 0;
+
+}

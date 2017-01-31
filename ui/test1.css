@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+}
+#main {
+  overflow: hidden;
+}
+#one{
+  border: solid black;
+  float: left;
+  padding: 10px;
+
+}
+#copy{
+ position: absolute;
+  left: 350px;
+}
+  #copyy{
+  font-size: 25px;
+  background-color: #1ABF00;
+  color: #FFFFFF;
+  width: 350;
+  height: 50;
+
+}
+#formcopy{
+  position: absolute;
+  top:0;
+left: 500px;
+
+}

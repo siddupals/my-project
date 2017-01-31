@@ -1,0 +1,108 @@
+#wrapper{
+
+}
+#masterhead{
+  background:#333 url('../sanfrancisco.jpeg') center  no-repeat;
+  background-size: cover;
+  padding-bottom: 360px;
+}
+#masterhead .jumbotron{
+  text-align: center;
+  background-color: transparent;
+
+}
+.navbar{
+  margin-bottom: 0;
+  background-color: transparent;
+}
+#section .jumbotron{
+  background-color:#ffffff;
+  text-align: center;
+}
+#services .container-fluid{
+  background-color:#6698FF;
+  color: #ffffff;
+  padding:110px;
+  text-align: center;
+}
+.tittle{
+  padding-bottom: 20px;
+  margin-bottom: 56px;
+  border-bottom: #ccc 2px solid;
+  display: inline-block;
+}
+.row .icon{
+  font-size: 75px;
+}
+.row {
+  text-align: center;
+}
+#work{
+  background:#333 url('../pexels-photo-297755.jpeg') center  no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.70);
+  z-index: 99;
+}
+#work .jumbotron{
+  background-color: transparent;
+}
+#work .jumbotron > h1{
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: white;
+  z-index: 100;
+
+}
+#images{
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*.row  .col-lg-3{
+  padding-right: 20px;
+}*/
+.role{
+  padding:20px;
+  margin: 0 auto;
+}
+#images .button{
+  background-color:#ccc;
+  color: white;
+  /*padding: 15px;*/
+}
+#click{
+  /*margin-top: 30px;*/
+  text-align: center;
+  background-color:#6698FF;
+  color: #ffffff;
+  padding: 60px;
+}
+#click h2{
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+#click .button{
+  margin-right: 18px;
+}
+#adress{
+  text-align: center;
+  padding: 100px;
+}
+#adress .icon i{
+  font-size: 25px;
+  padding: 8px;
+}
+#adress .icon{
+  margin: 20px;
+}
