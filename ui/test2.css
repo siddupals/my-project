@@ -78,3 +78,6 @@ nav li > a{
 .copy{
   float: right;
 }
+.copy > p,#end p{
+  color: blue;
+}
