@@ -74,5 +74,7 @@ nav li > a{
 }
 .box > :last-child{
   margin: 0;
-
+}
+.copy{
+  float: right;
 }
