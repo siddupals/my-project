@@ -1,0 +1,102 @@
+
+header{
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #8B0000;
+}
+.navbar-default .navbar-nav > li > a {
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.navbar-default .navbar-nav > li:last-child > a {
+  margin-right: 0;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #333;
+}
+#masterhead{
+  background:#333 url('sidd.jpg') center  no-repeat;
+  background-size: cover;
+  padding-bottom: 360px;
+}
+ .jumbotron{
+  text-align: center;
+  background-color: transparent;
+  /*color: white;*/
+  /*background-size: cover;*/
+}
+#masterhead .jumbotron p{
+  font-size: 38px;
+  font-weight: 100px;
+}
+#masterhead h1{
+  padding-top: 40px;
+  /*color:#4F3A3A;*/
+}
+.tittle{
+  /*padding-top: 30px;*/
+  text-align: center;
+  padding-bottom: 30px;
+  color: black;
+}
+#about, #contact{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#about p ,#activity, #contact{
+  text-align: center;
+}
+#activity .icon{
+  font-size: 60px;
+  color: black;
+}
+#activity{
+  background-color: #FF5151;
+  color: #333;
+  padding:30px 0;
+  position: relative;
+}
+#music{
+  background: #333 url('music.jpeg') center   no-repeat;
+  padding:150px 0;
+  background-size: cover;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+#music .jumbotron{
+  background-color: transparent;
+}
+#music h1{
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: white;
+  z-index: 100;
+}
+.adress{
+  font-size: 15px;
+}
+.social{
+  font-size: 24px;
+  padding-bottom: 15px;
+}
