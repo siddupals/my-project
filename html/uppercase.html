@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden</p>
+  <button type="button" onclick="myFunction()">Click!</button>
+  <script type="text/javascript">
+function name(nme)
+{
+  var bag=nme.split(' ');
+  var gang=[];
+  for (var i = 0; i < bag.length; i++)
+  {
+    gang.push(bag[i].charAt(0).toUpperCase()+bag[i].slice(1));
+  }
+  return gang.join(' ');
+}
+function myFunction()
+     {
+      document.getElementById("demo").innerHTML=name("sid soma");
+    }
+</script>
+</body>
+</html>
