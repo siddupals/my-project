@@ -7,23 +7,46 @@
   <title>Document</title>
 </head>
 <body>
-  <p id="demo">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden</p>
-  <button type="button" onclick="myFunction()">Click!</button>
+  <p id="do"><strong>lorem </strong>ipsum dolor sit amet, <strong>consectetur</strong>, sed do eiusmod tempor <strong>incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad <strong>minim</strong>, quis nostrud <strong>exercitation</strong> ullamco laboris nisi ut aliquip ex ea <strong>commodo</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden</p>
+  <button type="button" onclick="upper_case()">Click!</button>
+  <p id="output"></p>
   <script type="text/javascript">
-function name(nme)
+function upper_case()
 {
-  var bag=nme.split(' ');
-  var gang=[];
-  for (var i = 0; i < bag.length; i++)
-  {
-    gang.push(bag[i].charAt(0).toUpperCase()+bag[i].slice(1));
-  }
-  return gang.join(' ');
-}
-function myFunction()
-     {
-      document.getElementById("demo").innerHTML=name("sid soma");
+  function bad() {
+    var pal=document.getElementsByTagName("strong");
+    // console.log(pal);
+    for (var i = 0; i<pal.length; i++) {
+      pal[i].style.color="red";
     }
+    return pal;
+    // console.log(pal);
+  }
+  var bag = bad();
+  // console.log(upper(bag[0].innerText));
+  for(var i = 0; i<bag.length; i++) {
+    bag[i].innerText = upper(document.getElementById('do').innerText);
+  }
+
+  var text = document.getElementById('do').innerText;
+  console.log(text);
+
+  function upper(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  // var bar=bag.split(" ");
+  // console.log(bar);
+  // var bar=document.getElementById("do").innerHTML.split(" ");
+  // console.log(bar);
+  // var gang=[];
+  // for (var i = 0; i < bar.length; i++)
+  // {
+  //   gang.push(bar[i].charAt(0).toUpperCase()+bar[i].slice(1));
+  // }
+  // document.write(gang.join(' '));
+
+}
 </script>
 </body>
 </html>
