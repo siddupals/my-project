@@ -1,0 +1,30 @@
+
+body{
+  background-color: #ccc;
+}
+h1{
+  color: red;
+}
+#wrapper{
+  width: 800px;
+  margin: 0 auto;
+}
+#box{
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+#box .slide{
+  display: block;
+  width: 4000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+#box .slider{
+  float: left;
+  list-style-type: none;
+  width: 600px;
+  height: 400px;
+
+}

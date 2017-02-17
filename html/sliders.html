@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/slider.css">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Image Sliders</h1>
+    <div id="box">
+      <ul class="slide">
+          <li class="slider">
+            <img src="../images/apple-desk-designer-display.jpeg" width="600" height="400" alt="image 1">
+          </li>
+        <li class="slider" >
+          <img src="../images/coffee-cup-mug-desk.jpg" width="600" height="400" alt="img2">
+        </li>
+        <li class="slider">
+          <img src="../images/hands-woman-apple-desk.jpg" width="600" height="400" alt="img3">
+        </li>
+        <li class="slider">
+          <img src="../images/music.jpeg" width="600" height="400" alt="img4">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    var count=1;
+    setInterval(function(){
+      $("#box .slide").animate({'margin-left':"-=600px"} ,1000,function() {
+        count++;
+        console.log(count,count===4,count);
+        if(count===4){
+          count=1;
+          $("#box .slide").css({"margin-left":"0px"});
+        }
+
+      })
+    },3000);
+  });
+  </script>
+</body</html>
