@@ -1,0 +1,14 @@
+.slider{
+  width:100%;
+  height:400px;
+  overflow: hidden;
+}
+.slider .slider-inner{
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.slider-inner .slider-items{
+  display: inline-block;
+  float: left;
+}

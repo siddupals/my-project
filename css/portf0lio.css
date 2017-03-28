@@ -1,28 +1,93 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #wrapper{
-
+  position: relative;
+  margin-left: 0;
+}
+.navbar-default{
+  margin-bottom: 0;
+  background-color: transparent;
+  position: absolute;
+  top:0;
+  left: 80%;
+  z-index: 100;
+  border:0;
+}
+.navbar-default .navbar-nav >li>a{
+  font-size: 18px;
+  margin-left: 5px;
+  border-radius: 8%;
+  color: #ffffff;
 }
 #masterhead{
-  background:#333 url('../sanfrancisco.jpeg') center  no-repeat;
-  background-size: cover;
-  padding-bottom: 360px;
+  position: relative;
+}
+#masterhead .container-fluid{
+  width:1430px;
+  height:720px;
+  margin:auto;
+  padding:0;
+  overflow: hidden;
+}
+ .box{
+  display: block;
+  width:12000px;
+  height:720px;
+  padding:0;
+  margin:0;
+}
+#masterhead .slides{
+  float: left;
+  width:1430px;
+  height:720px;
+  list-style-type: none;
 }
 #masterhead .jumbotron{
   text-align: center;
   background-color: transparent;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  color: white;
+  z-index: 100;
 }
-.navbar{
-  margin-bottom: 0;
-  background-color: transparent;
+#masterhead .empty{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 #section .jumbotron{
-  background-color:#ffffff;
+  background-color:#ccc;
   text-align: center;
+  position: relative;
+  margin-bottom: 0;
+}
+#section .container-fluid{
+  padding: 0;
 }
 #services .container-fluid{
   background-color:#6698FF;
   color: #ffffff;
-  padding:110px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   text-align: center;
+}
+#section img{
+    position: absolute;
+    width: 555px;
+    height: 396px;
+    top: 10%;
+    left: 60%;
+    border-radius: 5%;
 }
 .tittle{
   padding-bottom: 20px;
@@ -37,7 +102,7 @@
   text-align: center;
 }
 #work{
-  background:#333 url('../pexels-photo-297755.jpeg') center  no-repeat;
+  background:#333 url("../images/music.jpeg") center  no-repeat;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -59,26 +124,17 @@
 #work .jumbotron > h1{
   position: absolute;
   top: 35%;
-  left: 30%;
+  left: 43%;
   color: white;
   z-index: 100;
-
 }
 #images{
   margin-bottom: 30px;
   text-align: center;
 }
-/*.row  .col-lg-3{
-  padding-right: 20px;
-}*/
 .role{
   padding:20px;
   margin: 0 auto;
-}
-#images .button{
-  background-color:#ccc;
-  color: white;
-  /*padding: 15px;*/
 }
 #click{
   /*margin-top: 30px;*/
@@ -87,16 +143,10 @@
   color: #ffffff;
   padding: 60px;
 }
-#click h2{
-  font-size: 22px;
-  padding-bottom: 20px;
-}
-#click .button{
-  margin-right: 18px;
-}
 #adress{
   text-align: center;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 #adress .icon i{
   font-size: 25px;
