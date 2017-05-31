@@ -1,0 +1,17 @@
+<div class="recentMovies" ng-controller = 'homeCtrl as hc'>
+  {{ recentMovie }} 
+  <div class="moviesLists">
+        <div class="movies-info" ng-repeat="movie in hc.movieList">
+          <div class="movies-img" ng-if="movie.poster_path">
+            <img ng-src="{{ 'https://image.tmdb.org/t/p/w185' + movie.poster_path }}" alt="movie name">
+          </div>
+          <div class="movies-img" ng-if= "!movie.poster_path">
+            <img src="http://placehold.it/185x274?text=NA" alt="NA">
+          </div>
+          <div class="movie-title">
+          <h3>{{ movie.title }}</h3>
+          <p>Rating: {{ movie.popularity }} </p>
+        </div>
+      </div>
+  </div>
+</div>

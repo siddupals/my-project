@@ -1,0 +1,22 @@
+<div class="movies" ng-controller= "mainCtrl as mc">
+  <div class="moviesName">
+    <form class="form" ng-submit= "mc.printmovieName()">
+         <input type="text" ng-model="mc.movieName" placeholder="Search">
+    </form>
+</div>
+<p class="load" ng-if= "mc.loading">Loading...</p>
+  <div class="moviesList">
+        <div class="movie-info" ng-repeat="movie in mc.movieList" ng-if= "!mc.loading">
+          <div class="movies-img" ng-if="movie.poster_path">
+            <img ng-src="{{ 'https://image.tmdb.org/t/p/w185' + movie.poster_path }}" alt="movie name">
+          </div>
+          <div class="movies-img" ng-if= "!movie.poster_path">
+            <img src="http://placehold.it/185x274?text=NA" alt="NA">
+          </div>
+          <div class="movie-title">
+          <h3>{{ movie.title }}</h3>
+          <p>Rating: {{ movie.popularity }} </p>
+        </div>
+      </div>
+  </div>
+</div>
