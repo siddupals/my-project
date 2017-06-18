@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper{
+  margin: 24px 20px;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul li .one ,.two, .three{
+  padding: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px #ffffff solid;
+}
+.active{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.two{
+  background-color: red;
+}
+.three{
+  background-color: #006994;
+}
+.one{
+
+  background-color: green;
+}
